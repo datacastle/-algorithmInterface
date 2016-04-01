@@ -37,7 +37,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.dc.algorithm.CorrectPercent</mainClass>
+                            <mainClass>org.dc.algorithm.CatAndDog</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -48,8 +48,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>
