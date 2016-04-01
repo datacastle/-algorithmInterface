@@ -9,26 +9,13 @@ import java.util.Map;
 
 /**
  * Created by lotus_work on 2015/9/17.
+ * 示例评分算法2
  */
 public class DandE implements Judge{
-    private static Logger logger= Logger.getLogger(CorrectPercent.class);
+    private static Logger logger= Logger.getLogger(DandE.class);
     public static void main(String[] args) {
-
-
         DandE correctPercent = new DandE();
-        System.out.println("last:"+correctPercent.judge("C:\\Users\\lotus_work\\Desktop\\加解密样本\\0分.csv","C:\\Users\\lotus_work\\Desktop\\加解密样本\\正确答案.csv"));
-        //System.out.println(testR.judge("D:\\test\\result.csv", "D:\\test\\judge.csv"));;
-       /* File file=new File("C:\\Users\\Administrator\\Desktop\\591\\591\\type3_test11.csv");
-        System.out.println(file.getAbsoluteFile());
-        System.out.println(file.getParent());
-        System.out.println(file.getParentFile().exists());
-        try {
-            FileUtils.forceMkdir(new File(file.getParent()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
-
+        System.out.println("last:"+correctPercent.judge("C:\\Users\\lotus_work\\Desktop\\用户提交的.csv","C:\\Users\\lotus_work\\Desktop\\测试集.csv"));
     }
 
     @Override

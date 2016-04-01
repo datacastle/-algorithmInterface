@@ -7,15 +7,16 @@ import java.util.*;
 
 /**
  * Created by lotus_work on 2016/3/31.
+ * 示例评分算法1
  */
 public class CatAndDog implements Judge {
     public static  void main(String[] args){
         CatAndDog catAndDog = new CatAndDog();
-        System.out.println(catAndDog.judge("C:\\Users\\lotus_work\\Desktop\\猫狗大战\\ceshi.csv","C:\\Users\\lotus_work\\Desktop\\猫狗大战\\ceshi.csv"));
+        System.out.println(catAndDog.judge("C:\\Users\\lotus_work\\Desktop\\猫狗大战\\用户提交的.csv","C:\\Users\\lotus_work\\Desktop\\猫狗大战\\测试集.csv"));
     }
 
     @Override
-    public Object judge(String produceFile, String judgeFile) {
+    public Float judge(String produceFile, String judgeFile) {
         float resultStr=0f;
         File oldfile = new File(produceFile);
         if (!oldfile.exists()) {

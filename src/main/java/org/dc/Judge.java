@@ -1,9 +1,10 @@
 package org.dc;
 
 /**
- * Created by 李龙飞 on 2015-06-24.
+ * Created by lotus_work on 2015-06-24.
+ * 算法接口
  */
 public interface  Judge {
 
-    Object judge(String produceFile, String judgeFile);
+    Float judge(String produceFile, String judgeFile);
 }
